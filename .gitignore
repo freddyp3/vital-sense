@@ -1,4 +1,7 @@
 vital_env/
-**/build/
-**/__pycache__/
+__pycache__/
+*.pyc
+build/
+sdkconfig
+sdkconfig.old
 .DS_Store
