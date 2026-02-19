@@ -1,0 +1,12 @@
+Firmware
+	•	Open ESP-IDF shell / activate ESP-IDF
+	•	Build:
+	•	csi_send: set-target esp32s3 → build
+	•	csi_recv: set-target esp32s3 → build
+	•	Flash only when board connected: idf.py -p PORT flash monitor
+
+Processing
+	•	python -m venv vital_env
+	•	activate venv
+	•	pip install -r processing/requirements.txt
+	•	cd processing && python logger.py
