@@ -208,50 +208,7 @@ python logger.py
 - Do NOT commit `vital_env/`
 - Activate the venv before running logger
 
----
-
-# 4) Recommended .gitignore
-
-Add this to your `.gitignore`:
-
-```text
-# Python
-vital_env/
-__pycache__/
-*.pyc
-
-# ESP-IDF
-build/
-sdkconfig
-sdkconfig.old
-
-# macOS
-.DS_Store
-```
-
----
-
-# 5) Common Errors
-
-### "command not found: idf.py"
-You did not activate ESP-IDF in that terminal session.
-
-### "IDF_TARGET mismatch"
-Run:
-```bash
-idf.py set-target esp32s3
-```
-
-### Python using wrong version
-Check:
-```bash
-python --version
-```
-Make sure virtual environment is activated.
-
----
-
-# 6) High-Level Workflow
+# 4) High-Level Workflow
 
 Terminal 1 (Firmware TX):
 - Activate ESP-IDF
@@ -266,7 +223,3 @@ Terminal 2 (Firmware RX):
 Terminal 3 (Processing):
 - Activate virtual environment
 - Run logger
-
----
-
-Project maintained for multi-OS collaboration (macOS, Linux, Windows).
