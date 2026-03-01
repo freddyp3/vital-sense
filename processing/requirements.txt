@@ -2,3 +2,6 @@ numpy
 scipy
 pyserial
 matplotlib
+pyqtgraph
+PyQt5  
+scikit-learn
